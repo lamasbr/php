@@ -1,0 +1,15 @@
+sudo: required
+
+language: ruby
+
+services:
+  - docker
+
+env:
+  - VERSION=latest
+
+install:
+- travis_wait 30 make build VERSION=${VERSION}
+
+script:
+- make test VERSION=${VERSION}
