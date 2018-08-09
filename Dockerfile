@@ -1,4 +1,4 @@
-FROM chialab/php:5.6
+FROM chialab/php:7.0
 MAINTAINER llamas.jf@gmail.com
 
 # Install PHP IMAP extension
